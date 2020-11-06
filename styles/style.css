@@ -2,10 +2,51 @@
 
 }
 
+h1 {
+  color: #12173F;
+}
+
+p.about {
+  background-color: rgba(190,212,233, 0.3);
+  padding: 20px;
+}
+
 
 body {
   background-color: #5D76A9;
+  color: #12173F;
+}
+
+container {
+  display: inline;
+}
+
+div.background-image {
+  background-image: url("https://www.nba.com/grizzlies/sites/grizzlies/files/confetti-ex-white-bg.jpg");
+  height: 100%;
+  background-attachment: fixed;
+}
+
+div.player {
+  display: inline-block;
+  padding: 10px 20px 0px 20px;
+  margin: 10px 10px 10px 10px;
+  background-color: #F5B112;
+}
+
+p.player-name {
+  text-align: center;
+}
+
+a {
   color: white;
+}
+
+footer {
+  color: white;
+  background-color:  #12173F;
+  border-top-style: solid;
+  border-top: #F5B112;
 }
 
 
