@@ -2,11 +2,26 @@
 
 }
 
+header {
+  background-color:#12173F;
+  padding: 10px;
+}
+
+li {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+img.header-logo {
+  height: 20%;
+  width: 20%;
+}
+
 h1 {
   color: #12173F;
 }
 
-p.about {
+p.aboutContent {
   background-color: rgba(190,212,233, 0.3);
   padding: 20px;
 }
