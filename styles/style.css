@@ -7,9 +7,25 @@ header {
   padding: 10px;
 }
 
-li {
+/* Mobile menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ham-button {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu { display: none;}
+  .ham-button {display: block;}
+}
+
+.menu li a {
   display: inline-block;
-  padding-right: 10px;
 }
 
 img.header-logo {
