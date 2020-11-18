@@ -9,13 +9,12 @@ header {
 }
 
 .header-logo {
-  width: 5%;
-  height: 5%;
+  width: 90px;
 }
 
 .nav {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 }
 
@@ -89,11 +88,11 @@ label:focus {
 #toggle:checked + .menu {
   display: block;
 }
-
-
 }
 
-/* End media query*/
+
+
+ /* End media query */
 
 h1 {
   color: #12173F;
@@ -102,6 +101,7 @@ h1 {
 p.aboutContent {
   background-color: rgba(190,212,233, 0.3);
   padding: 20px;
+  border-radius: 15px;
 }
 
 
@@ -126,10 +126,12 @@ div.player {
   margin: 10px 10px 10px 10px;
   background-color: #F5B112;
   border-radius: 15px;
+  border-bottom: 5px solid #12173F;
 }
 
-img {
+.player img {
   border-radius: 15px;
+  border-bottom: 5px solid #12173F;
 }
 
 p.player-name {
@@ -148,12 +150,72 @@ footer {
   padding: 20px;
 }
 
+.email-container h1 {
+  color: white;
+}
 
-/*
+.email-container {
+  margin: 70px auto 50px auto;
+  width: 60%;
+  text-align: center;
+  background-color: #12173F;
+  border-radius: 15px;
+  padding: 20px;
+  transition: all 2s ease-in-out;
+}
+
+.form-control {
+  border: none;
+  border-bottom: 1px solid #12173F;
+  color: #F5B112;
+  background: transparent;
+}
+
+.email-container h1:after {
+  border-bottom: thin solid #F5B112;
+  content: "";
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+form .submit {
+  color: #12173F;
+  font-size: large;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: #F5B112;
+}
+
+form .submit:hover {
+  background-color: rgba(190,212,233, 0.3);
+  cursor: pointer;
+  color: white;
+}
+
+
+
+/* DARK MODE */
 @media (prefers-color-scheme: dark) {
+  
+  p.aboutContent {
+    background-color: #707271;
+    color: white;
+  }
 
-  body {
+  div.player {
     background-color: #12173F;
+    color: white;
+    border-bottom: 5px solid #F5B112;
+  }
+
+  .menu a {
+    color: white;
+  }
+
+  .player img {
+    border-bottom: 5px solid #F5B112;
   }
 }
-*/
+/* END DARK MODE */

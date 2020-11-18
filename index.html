@@ -11,9 +11,10 @@
 </head>
 <header>
   <div class="nav">
-    <img class="header-logo" src="https://www.nba.com/grizzlies/sites/grizzlies/files/grizzlies_primary_logo_white_pms.png?w=180&h=105" alt="Grizzlies logo" />
+    <img class="header-logo" src="images/memphis-grizzlies-seeklogo.com copy.svg" alt="Grizzlies logo" />
       <label for="toggle">&#9776</label>
       <input type="checkbox" id="toggle"/>
+    <button class="btn-toggle">Dark Mode</button>  
     <ul class="menu" id="menu">
       <li><a href="#about">ABOUT</a></li>
       <li><a href="#roster">ROSTER</a></li>
@@ -32,66 +33,70 @@
   </div>
   <div class="container">
     <h1 id="roster">2020 Grizzlies Roster</h1>
-      <div class="player">
-        <img src="images/brookdi01.jpg" alt="Dillon Brooks">
-        <p class="player-name">
-          Dillon</br> Brooks
-        </p>
-      </div> 
-      <div class="player">
-        <img src="images/valanjo01.jpg" alt="Jonas Valanciunas">
-        <p class="player-name">
-          Jonas</br> Valanciunas
-        </p>
-      </div> 
-      <div class="player">
-        <img src="images/moranja01.jpg" alt="Ja Morant">
-        <p class="player-name">
-          Ja</br> Morant
-        </p>
+      <div class="player-row">
+        <div class="player">
+          <img src="images/brookdi01.jpg" alt="Dillon Brooks">
+          <p class="player-name">
+            Dillon</br> Brooks
+          </p>
+        </div> 
+        <div class="player">
+          <img src="images/valanjo01.jpg" alt="Jonas Valanciunas">
+          <p class="player-name">
+            Jonas</br> Valanciunas
+          </p>
+        </div> 
+        <div class="player">
+          <img src="images/moranja01.jpg" alt="Ja Morant">
+          <p class="player-name">
+            Ja</br> Morant
+          </p>
+        </div>
+        <div class="player">
+          <img src="images/anderky01.jpg" alt="Kyle Anderson">
+          <p class="player-name">
+            Kyle</br> Anderson
+          </p>
+        </div>
+        <div class="player">
+          <img src="images/jonesty01.jpg" alt="Tyus Jones">
+          <p class="player-name">
+            Tyus</br> Jones
+          </p>
+        </div>
       </div>
-      <div class="player">
-        <img src="images/anderky01.jpg" alt="Kyle Anderson">
-        <p class="player-name">
-          Kyle</br> Anderson
-        </p>
-      </div>
-      <div class="player">
-        <img src="images/jonesty01.jpg" alt="Tyus Jones">
-        <p class="player-name">
-          Tyus</br> Jones
-        </p>
-      </div>
-      <div class="player">
-        <img src="images/meltode01.jpg" alt="De'Anthony Melton">
-        <p class="player-name">
-          De'Anthony</br> Melton
-        </p>
-      </div>
-      <div class="player">
-        <img src="images/clarkbr01.jpg" alt="Brandon Clarke">
-        <p class="player-name">
-          Brandon</br> Clarke
-        </p>
-      </div>
-      <div class="player">
-        <img src="images/jacksja02.jpg" alt="Jaren Jackson Jr.">
-        <p class="player-name">
-          Jaren</br> Jackson Jr.
-        </p>
-      </div>
-      <div class="player">
-        <img src="images/gudurma01.jpg" alt="Marko Guduric">
-        <p class="player-name">
-          Marko</br> Guduric
-        </p>
-      </div>
-      <div class="player">
-        <img src="images/allengr01.jpg" alt="Grayson Allen">
-        <p class="player-name">
-          Grayson</br> Allen
-        </p>
-      </div>
+      <div class="player-row">
+        <div class="player">
+          <img src="images/meltode01.jpg" alt="De'Anthony Melton">
+          <p class="player-name">
+            De'Anthony</br> Melton
+          </p>
+        </div>
+        <div class="player">
+          <img src="images/clarkbr01.jpg" alt="Brandon Clarke">
+          <p class="player-name">
+            Brandon</br> Clarke
+          </p>
+        </div>
+        <div class="player">
+          <img src="images/jacksja02.jpg" alt="Jaren Jackson Jr.">
+          <p class="player-name">
+            Jaren</br> Jackson Jr.
+          </p>
+        </div>
+        <div class="player">
+          <img src="images/gudurma01.jpg" alt="Marko Guduric">
+          <p class="player-name">
+            Marko</br> Guduric
+          </p>
+        </div>
+        <div class="player">
+          <img src="images/allengr01.jpg" alt="Grayson Allen">
+          <p class="player-name">
+            Grayson</br> Allen
+          </p>
+        </div>
+      </div>   
   </div>
   <div class="container">
     <h1 id="predictions">2020 Predictions</h1>
@@ -105,9 +110,19 @@
         <p>
           Other
         </p>
+  <div class="email-container">
+    <h1>Contact Us</h1>
+  
+    <div class="contact-form">
+      <form id="contact-form" method="post" action="">
+        <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+        <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+        <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea>
+        <input type="submit" class="form-control submit" value="SEND MESSAGE">
+      </form>
+    </div>  
+  </div>      
   </div>
-
-
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 <div>
