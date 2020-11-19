@@ -100,17 +100,16 @@ label:focus {
 }
 
 }
-
-
-
  /* End media query */
+
+
 
 h1 {
   color: #12173F;
 }
 
 .aboutContent {
-  background-color: blue;
+  background-color: rgba(190,212,233, 0.3);
   padding: 20px;
   border-radius: 15px;
 }
@@ -175,11 +174,33 @@ footer {
   transition: all 2s ease-in-out;
 }
 
+
 .form-control {
   border: none;
-  border-bottom: 1px solid #12173F;
   color: #F5B112;
   background: transparent;
+  border-bottom: thin solid #F5B112; 
+  margin-left: auto;
+  margin-right: auto;
+  width 20%;
+  border-radius: 0px;
+}
+
+input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-bottom: 1px solid #F5B112;  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#text-area {
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #F5B112;  
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .email-container h1:after {
@@ -240,6 +261,20 @@ body.dark-theme {
 }
 
 body.dark-theme .aboutContent {
-  background-color: green;
+  background-color: #707271;
+}
+
+body.dark-theme .player {
+  background-color: #12173F;
+  color: white;
+  border-bottom: 5px solid #F5B112;
+}
+
+body.dark-theme h1 {
+  color: #707271;
+}
+
+body.dark-theme h2 {
+  color: #707271;
 }
 /* END DARK MODE */
