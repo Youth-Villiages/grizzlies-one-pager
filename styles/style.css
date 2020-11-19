@@ -116,8 +116,8 @@ h1 {
 
 
 body {
-  background-color: #5D76A9;
-  color: #12173F;
+  
+  color: #ffefc1;
 }
 
 container {
@@ -125,7 +125,7 @@ container {
 }
 
 .background-image {
-  background-image: url("");
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallup.net%2Fmemphis-grizzlies-nba-basketball-9%2F&psig=AOvVaw3g4Ni2aIYeRCNF61L0JBaN&ust=1605878984404000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPjApsXbju0CFQAAAAAdAAAAABAY");
   height: 100%;
   background-attachment: fixed;
 }
