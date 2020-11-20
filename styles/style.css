@@ -23,6 +23,8 @@ a {
   width: 100%;
 }
 
+
+/*
 .header ul {
   margin: 0;
   padding: 0;
@@ -119,6 +121,7 @@ a {
 .header .menu-btn:checked ~ .menu-icon .navicon:after {
   transform: rotate(45deg);
 }
+*/
 
 
 
