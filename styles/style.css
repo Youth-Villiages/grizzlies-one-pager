@@ -4,6 +4,17 @@ header {
   border-bottom: 5px solid #F5B112;
 }
 
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+
 .header-logo {
   width: 90px;
 }
@@ -26,15 +37,6 @@ header {
   color: #F5B112;
 }
 
-label {
-  margin: 0 40px 0 0;
-  font-size: 26px;
-  display: none;
-}
-
-#toggle {
-  display: none;
-}
 
 ul {
   list-style-type: none;
@@ -42,7 +44,10 @@ ul {
 
 li {
   padding-left: 30px;
+}
 
+#toggle {
+  display: none;
 }
 
 label {
@@ -52,6 +57,9 @@ label {
   font-size: 30px;
   cursor: pointer;
   display: none;
+  
+  font-size: 26px;
+  display: none;
 }
 
 label:focus {
@@ -59,7 +67,9 @@ label:focus {
 }
 
 .btn-toggle {
-  float: right;
+  position: relative;
+  left: 35px;
+  color: #F5B112;
 }
 
 @media screen and (max-width: 768px) {
@@ -73,6 +83,7 @@ label:focus {
   label {
     display: block;
     cursor: pointer;
+    float: right;
   }
   .menu {
     width: 100%;
@@ -103,8 +114,6 @@ label:focus {
 
 }
  /* End media query */
-
-
 
 h1 {
   color: #12173F;
