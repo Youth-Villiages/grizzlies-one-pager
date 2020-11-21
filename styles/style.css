@@ -74,12 +74,6 @@ label:focus {
 
 @media screen and (max-width: 768px) {
 
-  .header-logo {
-    justify-content: space-between;
-    height: 10%;
-    width: 10%;
-  }
-
   label {
     display: block;
     cursor: pointer;
@@ -98,19 +92,10 @@ label:focus {
     padding: 10px 0 10px 0;
     float: right;
   }
-#toggle:checked + .menu {
-  display: block;
-}
 
-.email-container {
-  margin: 70px auto 50px auto;
-  width: 100%;
-  text-align: center;
-  background-color: #12173F;
-  border-radius: 15px;
-  padding: 20px;
-  transition: all 2s ease-in-out;
-}
+  #toggle:checked + .menu {
+    display: block;
+  }
 
 }
  /* End media query */
