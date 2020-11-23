@@ -1,6 +1,5 @@
 header {
   background-color:#12173F;
-  padding: 10px;
   border-bottom: 5px solid #F5B112;
 }
 
@@ -27,9 +26,8 @@ button, input[type="submit"], input[type="reset"] {
 
 .menu {
   display: flex;
-  padding-right: 30px;
-  float: right;
-  align-items: flex-end;
+  padding: 0 10px 0 0;
+  justify-content: flex-end;
 }
 
 .menu a {
@@ -57,7 +55,7 @@ label {
   font-size: 30px;
   cursor: pointer;
   display: none;
-  
+  clear: both;
   font-size: 26px;
   display: none;
 }
@@ -65,40 +63,6 @@ label {
 label:focus {
   outline: none;
 }
-
-.btn-toggle {
-  position: relative;
-  left: 35px;
-  color: #F5B112;
-}
-
-@media screen and (max-width: 768px) {
-
-  label {
-    display: block;
-    cursor: pointer;
-    float: right;
-  }
-  .menu {
-    width: 100%;
-    display: none;
-  }
-
-  .menu a {
-    display: block;
-    text-align: right;
-    width: 100%;
-    margin: 0;
-    padding: 10px 0 10px 0;
-    float: right;
-  }
-
-  #toggle:checked + .menu {
-    display: block;
-  }
-
-}
- /* End media query */
 
 h1 {
   color: #12173F;
@@ -123,6 +87,7 @@ body {
 
 container {
   display: inline;
+  margin: 0 auto 0 auto;
 }
 
 .player {
@@ -159,14 +124,12 @@ footer {
   color: white;
 }
 
-.email-container {
-  margin: 70px auto 50px auto;
-  width: 60%;
-  text-align: center;
-  background-color: #12173F;
-  border-radius: 15px;
-  padding: 20px;
-  transition: all 2s ease-in-out;
+
+
+form {
+  width: 100%
+  margin: 0;
+  padding: 0;
 }
 
 
@@ -177,7 +140,7 @@ footer {
   border-bottom: thin solid #F5B112; 
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 80%;
   border-radius: 0px;
 }
 
@@ -196,6 +159,16 @@ input[type=text] {
   border: 1px solid #F5B112;  
   margin-left: auto;
   margin-right: auto;
+}
+
+.email-container {
+  margin: 70px auto 50px auto;
+  text-align: center;
+  max-width: 900px;
+  background-color: #12173F;
+  border-radius: 15px;
+  padding: 20px 0 20px 0;
+  transition: all 2s ease-in-out;
 }
 
 .email-container h1:after {
@@ -220,6 +193,73 @@ form .submit:hover {
   cursor: pointer;
   color: white;
 }
+
+.row {
+  margin: 0 auto 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+
+  header {
+    padding: 10px;
+  }
+
+  label {
+    display: block;
+    cursor: pointer;
+    float: right;
+  }
+  .menu {
+    width: 100%;
+    display: none;
+    padding: 0;
+  }
+
+  li {
+    padding: 0 10px 0 10px;
+    margin: 0 auto;
+  }
+
+  li:hover{
+    
+  }
+
+  .menu a {
+    display: block;
+    text-align: center;
+    margin: 0 auto 0 auto;
+  }
+
+  .menu a:hover {
+    border-bottom: thin solid #F5B112;
+    content: "";
+    display: block;
+  }
+
+  #toggle:checked + .menu {
+    display: inline-flex;
+    justify-content: center;
+    padding-left: 30px;
+    margin: 0px;
+  }
+  
+  .btn-toggle {
+    color: #F5B112;
+    float: right;
+  }
+
+  .email-container {
+    margin: 70px auto 50px auto;
+    text-align: center;
+    width: 90%;
+    background-color: #12173F;
+    border-radius: 15px;
+    padding: 20px 0 20px 0;
+    transition: all 2s ease-in-out;
+  }
+
+}
+ /* End media query */
 
 
 
