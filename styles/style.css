@@ -260,6 +260,10 @@ form .submit:hover {
     transition: all 2s ease-in-out;
   }
 
+  .christmasDay {
+    font-size: 30px;
+  }
+
 }
  /* End media query */
 
@@ -290,6 +294,17 @@ form .submit:hover {
   .player img {
     border-bottom: 5px solid #F5B112;
   }
+
+  .predictions {
+    background-color: #12173F;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  button:focus {
+    outline: none;
+  }
+
 }
 
 
