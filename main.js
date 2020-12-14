@@ -36,3 +36,10 @@ function countdown() {
 }
 
 countdown();
+function show_hide() {
+  if (document.getElementById("appear").style.display == 'none') {
+    document.getElementById("appear").style.display = 'block';
+  }else{
+    document.getElementById("appear").style.display = 'none';
+  }
+}
