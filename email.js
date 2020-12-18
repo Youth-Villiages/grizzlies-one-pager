@@ -22,6 +22,6 @@
         function clearForm(){
             document.getElementById('name').value='';
             document.getElementById('email').value='';
-            document.getElementById('message').value='';
+            document.getElementById('text-area').value='';
           }
   
